@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terapia de Pareja y para Adultos | Dra. Laura Hernández</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    :root {
+      --main: #6C63FF;    /* Morado suave */
+      --accent: #EAE2F8;  /* Lila claro */
+      --text: #333333;    /* Texto oscuro */
+      --radius: 1rem;     /* Bordes redondeados */
+    }
+
+.main-btn {
+  background-color: #6C63FF;
+  color: white;
+  border-radius: var(--radius);
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+}
+
+.main-btn:hover {
+  background-color: #5048ed;
+}
+
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: var(--text);
+      background-color: var(--accent);
+    }
+    .bg-main { background-color: var(--main) !important; }
+    .text-main { color: var(--main) !important; }
+    .btn-main {
+      background-color: var(--main);
+      color: white;
+      border-radius: var(--radius);
+      padding: 0.75rem 1.5rem;
+      font-weight: 600;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease;
+    }
+    .btn-main:hover {
+      background-color: darken(var(--main), 10%);
+    }
+    .section { padding: 80px 0; }
+    .card {
+      border: none;
+      border-radius: var(--radius);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease;
+    }
+    .card:hover { transform: translateY(-5px); }
+    .navbar {
+      background-color: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .navbar-brand {
+      font-weight: 600;
+      font-size: 1.25rem;
+    }
+    header#inicio {
+      background: var(--main) url('/hero-bg.jpg') center/cover no-repeat;
+      color: white;
+      padding: 120px 0;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    }
+    .accordion-button:not(.collapsed) {
+      background-color: var(--accent);
+      color: var(--main);
+      font-weight: 500;
+    }
+    footer {
+      background-color: var(--main);
+      color: white;
+      padding: 40px 0;
+      font-size: 0.9rem;
+    }
+    footer a { color: var(--accent); }
+
+        /* Hero con imagen de fondo */
+    header#inicio {
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+                  url('/assets/hero.jpg') center/cover no-repeat;
+      color: white;
+      padding: 170px 0;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#inicio">
+        <img src="/logo.png" alt="Logo" height="40" class="me-2" /> Dra. Laura Hernández
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre mí</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">Preguntas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+ <!-- HERO -->
+  <header id="inicio" class="text-center">
+    <div class="container">
+      <h1 class="display-4 fw-semibold">Terapia de Pareja y para Adultos</h1>
+      <p class="lead mt-3 mb-4">Un espacio seguro y profesional para tu bienestar emocional.</p>
+      <a href="#contacto" class="btn main-btn btn-lg">Agendar cita</a>
+    </div>
+  </header>
+  <!-- SOBRE MÍ -->
+  <section id="sobre" class="section">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        <div class="col-md-6">
+          <img src="/assets/mainimage.jpg" class="img-fluid rounded-top" alt="Psicóloga Dra. Laura Hernández" />
+        </div>
+        <div class="col-md-6">
+          <h2 class="fw-semibold text-main">Sobre mí</h2>
+          <p class="fs-5">Soy la Dra. Laura Hernández, psicóloga clínica con más de 8 años de experiencia en terapia individual y de pareja. Mi enfoque integrativo se basa en la empatía y el acompañamiento personalizado.</p>
+          <ul class="list-unstyled">
+            <li class="mb-2"><i class="bi bi-award me-2"></i> Licenciatura en Psicología – UCR</li>
+            <li class="mb-2"><i class="bi bi-check-circle me-2"></i> Colegiada: PS-12345</li>
+            <li><i class="bi bi-laptop me-2"></i> Consultas presenciales y en línea</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- SERVICIOS -->
+<section id="servicios" class="section bg-light">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-semibold text-main">Servicios Especializados</h2>
+      <p class="text-muted">Programas diseñados para tu crecimiento personal y de pareja</p>
+    </div>
+    <div class="row gy-4 justify-content-center">
+      <!-- Terapia Individual -->
+      <div class="col-sm-8 col-md-6 col-lg-4">
+        <div class="card border-0 shadow-sm h-100 text-center service-card p-4">
+          <div class="mb-3">
+            <i class="bi bi-person-lines-fill display-4 text-main"></i>
+          </div>
+          <h5 class="card-title">Terapia Individual</h5>
+          <p class="card-text">Acompañamiento en ansiedad, autoestima, estrés y procesos de duelo.</p>
+          <a href="#contacto" class="btn btn-outline-main mt-auto">Más información</a>
+        </div>
+      </div>
+      <!-- Terapia de Pareja -->
+      <div class="col-sm-8 col-md-6 col-lg-4">
+        <div class="card border-0 shadow-sm h-100 text-center service-card p-4">
+          <div class="mb-3">
+            <i class="bi bi-heart-fill display-4 text-main"></i>
+          </div>
+          <h5 class="card-title">Terapia de Pareja</h5>
+          <p class="card-text">Mejora la comunicación, resuelve conflictos y fortalece el vínculo afectivo.</p>
+          <a href="#contacto" class="btn btn-outline-main mt-auto">Más información</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Efecto hover en las tarjetas */
+  .service-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Botón outline personalizado */
+  .btn-outline-main {
+    color: var(--main);
+    border: 2px solid var(--main);
+  }
+  .btn-outline-main:hover {
+    background-color: var(--main);
+    color: #fff;
+  }
+</style>
+
+<!-- BLOG -->
+<section id="blog" class="section bg-light">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-semibold text-main">Nuestro Blog</h2>
+      <p class="text-muted">Descubre consejos y artículos para tu bienestar emocional</p>
+    </div>
+    <div class="row gy-4">
+      <!-- Post 1 -->
+      <div class="col-sm-8 col-md-6 col-lg-4">
+        <div class="card border-0 shadow-sm h-100 blog-card">
+          <img src="/assets/hero.jpg" class="card-img-top" alt="Título del artículo">
+          <div class="card-body d-flex flex-column">
+            <small class="text-main mb-2">Psicología</small>
+            <h5 class="card-title">Cómo manejar la ansiedad en el día a día</h5>
+            <p class="card-text flex-grow-1">Técnicas prácticas y ejercicios que puedes incorporar en tu rutina para reducir la tensión y recuperar el control.</p>
+            <a href="#" class="btn btn-outline-main mt-3">Leer más</a>
+          </div>
+        </div>
+      </div>
+      <!-- Post 2 -->
+      <div class="col-sm-8 col-md-6 col-lg-4">
+        <div class="card border-0 shadow-sm h-100 blog-card">
+          <img src="/assets/hero.jpg" class="card-img-top" alt="Título del artículo">
+          <div class="card-body d-flex flex-column">
+            <small class="text-main mb-2">Relaciones</small>
+            <h5 class="card-title">Fortalece la comunicación en pareja</h5>
+            <p class="card-text flex-grow-1">Descubre claves para mejorar el diálogo, escuchar activamente y resolver conflictos de forma constructiva.</p>
+            <a href="#" class="btn btn-outline-main mt-3">Leer más</a>
+          </div>
+        </div>
+      </div>
+      <!-- Post 3 -->
+      <div class="col-sm-8 col-md-6 col-lg-4">
+        <div class="card border-0 shadow-sm h-100 blog-card">
+          <img src="/assets/hero.jpg" class="card-img-top" alt="Título del artículo">
+          <div class="card-body d-flex flex-column">
+            <small class="text-main mb-2">Autocuidado</small>
+            <h5 class="card-title">Rutina de autocuidado para equilibrar tu mente</h5>
+            <p class="card-text flex-grow-1">Ideas sencillas de hábitos diarios para nutrir tu bienestar emocional y mental.</p>
+            <a href="#" class="btn btn-outline-main mt-3">Leer más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Elevación y hover suave para las tarjetas de blog */
+  .blog-card {
+    border-radius: .5rem;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+  /* Imagen responsiva y proporcional */
+  .blog-card .card-img-top {
+    object-fit: cover;
+    height: 200px;
+  }
+  /* Reuso de botón outline */
+  .btn-outline-main {
+    color: var(--main);
+    border: 2px solid var(--main);
+  }
+  .btn-outline-main:hover {
+    background-color: var(--main);
+    color: #fff;
+  }
+</style>
+
+
+
+
+ <!-- CONTACTO -->
+<section id="contacto" class="section bg-white">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h2 class="fw-semibold text-main">Contacto</h2>
+      <p class="text-muted">Envía tu consulta o agendemos tu sesión vía WhatsApp</p>
+    </div>
+    <div class="row gy-4">
+      <!-- Formulario -->
+      <div class="col-md-6">
+        <form action="https://formspree.io/f/tu_formulario" method="POST">
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" id="nombre" name="nombre" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label for="correo" class="form-label">Correo</label>
+            <input type="email" id="correo" name="correo" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" class="form-control" required></textarea>
+          </div>
+          <button type="submit" class="btn main-btn">Enviar</button>
+        </form>
+      </div>
+      <!-- Info de contacto + Mapa -->
+      <div class="col-md-6">
+        <div class="contact-info mb-3">
+          <p class="fs-6 mb-2">
+            <i class="bi bi-whatsapp me-2"></i>
+            <a href="https://wa.me/50600000000" class="text-decoration-none text-main" target="_blank" rel="noopener">WhatsApp</a>
+          </p>
+          <p class="fs-6 mb-2">
+            <i class="bi bi-envelope me-2"></i>
+            <a href="mailto:contacto@psicologa.com" class="text-decoration-none text-main">contacto@psicologa.com</a>
+          </p>
+          <p class="fs-6">
+            <i class="bi bi-geo-alt me-2"></i>San José, Costa Rica
+          </p>
+        </div>
+        <div class="ratio ratio-16x9 rounded-3 overflow-hidden">
+          <iframe
+            src="https://maps.google.com/maps?q=San+Jose+Costa+Rica&output=embed"
+            loading="lazy"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- PREGUNTAS FRECUENTES -->
+  <section id="faq" class="section">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2 class="fw-semibold text-main">Preguntas Frecuentes</h2>
+      </div>
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#q1">
+              ¿Cuánto dura una sesión?
+            </button>
+          </h2>
+          <div id="q1" class="accordion-collapse collapse show">
+            <div class="accordion-body">Cada sesión dura 50 minutos.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q2">
+              ¿Son confidenciales las sesiones?
+            </button>
+          </h2>
+          <div id="q2" class="accordion-collapse collapse">
+            <div class="accordion-body">Sí, todo lo compartido está protegido por la ética profesional.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q3">
+              ¿Cómo agendo una cita?
+            </button>
+          </h2>
+          <div id="q3" class="accordion-collapse collapse">
+            <div class="accordion-body">Puedes agendar vía formulario o WhatsApp.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+<!-- Botón flotante de WhatsApp -->
+<a
+  href="https://wa.me/50600000000"
+  class="whatsapp-float"
+  target="_blank"
+  rel="noopener"
+  aria-label="Chat por WhatsApp"
+>
+  <i class="bi bi-whatsapp"></i>
+</a>
+
+<style>
+  .whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  .whatsapp-float:hover {
+    background-color: #1ebe57;
+    transform: translateY(-2px);
+  }
+</style>
+
+
+
+
+
+
+ <!-- FOOTER -->
+<footer class="bg-dark text-light pt-5 pb-3">
+  <div class="container">
+    <div class="row gy-4">
+      <!-- About -->
+      <div class="col-md-4">
+        <h5 class="text-main fw-semibold">Dra. Laura Hernández</h5>
+        <p class="small mb-0">Psicóloga Clínica colegiada PS-12345</p>
+      </div>
+      <!-- Quick Links -->
+      <div class="col-md-4">
+        <h6 class="text-main fw-semibold">Enlaces rápidos</h6>
+        <ul class="list-unstyled small">
+          <li><a href="#inicio" class="text-light text-decoration-none">Inicio</a></li>
+          <li><a href="#sobre" class="text-light text-decoration-none">Sobre mí</a></li>
+          <li><a href="#servicios" class="text-light text-decoration-none">Servicios</a></li>
+          <li><a href="#contacto" class="text-light text-decoration-none">Contacto</a></li>
+        </ul>
+      </div>
+      <!-- Contact Info -->
+      <div class="col-md-4">
+        <h6 class="text-main fw-semibold">Contacto</h6>
+        <p class="small mb-1"><i class="bi bi-telephone me-2"></i>+506 0000 0000</p>
+        <p class="small mb-1"><i class="bi bi-envelope me-2"></i>contacto@psicologa.com</p>
+        <p class="small"><i class="bi bi-geo-alt me-2"></i>San José, Costa Rica</p>
+      </div>
+    </div>
+    <hr class="border-secondary mt-4">
+    <div class="d-flex justify-content-center align-items-center pt-3 small">
+  <p class="mb-0">© <span id="year"></span> Dra. Laura Hernández. Todos los derechos reservados.</p>
+</div>
+
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
